@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cabecalho.css" />
+    <link rel="stylesheet" href="../css/carrinho.css" />
+    <link rel="stylesheet" href="../css/rodape.css" />
+    <title>Laricca - Página Inicial</title>
+  </head>
+  <body>
+    <a class="carrinho pagina-ativa" href="carrinho.html">
+      <img
+        src="../img/cabecalho/header/carrinho.png"
+        alt="Carrinho"
+        id="carrinho"
+      />
+    </a>
+    <a class="cadastro" href="cadastro.html">Cadastro</a>
+
+    <header>
+      <div class="banner"></div>
+      <nav class="menu-navegacao">
+        <ul>
+          <li>
+            <a href="pagina-inicial.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-home.png"
+                alt="Home"
+              />
+            </a>
+            Home
+          </li>
+          <li>
+            <a href="pagina-pratos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-pratos.png"
+                alt="Pratos"
+              />
+            </a>
+            Pratos
+          </li>
+          <li>
+            <a href="pagina-bebidas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-bebidas.png"
+                alt="Bebidas"
+              />
+            </a>
+            Bebidas
+          </li>
+          <li>
+            <a href="pagina-petiscos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-petiscos.png"
+                alt="Petiscos"
+              />
+            </a>
+            Petiscos
+          </li>
+          <li>
+            <a href="pagina-sobremesas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-sobremesas.png"
+                alt="Sobremesas"
+              />
+            </a>
+            Sobremesas
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1>Carrinho</h1>
+
+      <table class="carrinho">
+        <thead>
+          <tr>
+            <th id="item">ITEM</th>
+            <th id="preco">PREÇO</th>
+            <th id="quantidade">QUANTIDADE</th>
+          </tr>
+        </thead>
+        <tbody id="container-produto">
+          <!-- Toletinho de Carne -->
+          <tr class="valores">
+            <td class="item">
+              <div class="item-container">
+                <img
+                  src="../img/pagina-pratos/toletinho-de-carne.jpg"
+                  alt="Toletinho de Carne"
+                />
+                <span>Toletinho de Carne</span>
+              </div>
+            </td>
+            <td class="preco">R$ 79,90</td>
+            <td class="quantidade">
+              <div class="quantidade-container">
+                <button class="diminuir-item">-</button>
+                <input type="number" class="quantidade-item" value="1" />
+                <button class="adicionar-item">+</button>
+                <button class="remover-item">Remover</button>
+              </div>
+            </td>
+          </tr>
+          <!-- Chocolate Quente -->
+          <tr class="valores">
+            <td class="item">
+              <div class="item-container">
+                <img
+                  src="../img/pagina-bebidas/chocolate-quente.jpg"
+                  alt="Chocolate Quente"
+                />
+                <span>Chocolate Quente</span>
+              </div>
+            </td>
+            <td class="preco">R$ 15,99</td>
+            <td class="quantidade">
+              <div class="quantidade-container">
+                <button class="diminuir-item">-</button>
+                <input type="number" class="quantidade-item" value="1" />
+                <button class="adicionar-item">+</button>
+                <button class="remover-item">Remover</button>
+              </div>
+            </td>
+          </tr>
+          <!-- Mandioca Frita -->
+          <tr class="valores">
+            <td class="item">
+              <div class="item-container">
+                <img
+                  src="../img/pagina-petiscos/mandioca-frita.webp"
+                  alt="Mandioca Frita"
+                />
+                <span>Mandioca Frita</span>
+              </div>
+            </td>
+            <td class="preco">R$ 22,90</td>
+            <td class="quantidade">
+              <div class="quantidade-container">
+                <button class="diminuir-item">-</button>
+                <input type="number" class="quantidade-item" value="1" />
+                <button class="adicionar-item">+</button>
+                <button class="remover-item">Remover</button>
+              </div>
+            </td>
+          </tr>
+          <!-- Fatia de Bolo -->
+          <tr class="valores">
+            <td class="item">
+              <div class="item-container">
+                <img
+                  src="../img/pagina-sobremesas/fatia-de-bolo.jpg"
+                  alt="Fatia de Bolo"
+                />
+                <span>Fatia de Bolo</span>
+              </div>
+            </td>
+            <td class="preco">R$ 19,90</td>
+            <td class="quantidade">
+              <div class="quantidade-container">
+                <button class="diminuir-item">-</button>
+                <input type="number" class="quantidade-item" value="1" />
+                <button class="adicionar-item">+</button>
+                <button class="remover-item">Remover</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="total">
+            <td colspan="3">
+              <span class="strong">Total</span><span>R$138,69</span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <button class="finalizar-compra">FINALIZAR COMPRA</button>
+    </main>
+
+    <footer>
+      <section class="informacoes">
+        <div class="contate-nos">
+          <h2>CONTATE-NOS</h2>
+          <p>Email:denere98@gmail.com Telefone: (44) 99763-2872</p>
+        </div>
+        <div class="endereco">
+          <h2>Endereço</h2>
+          <p>
+            Endereço: Goioerê - PR, Jardim Universitário, Nadir Cancian, N° 35.
+          </p>
+        </div>
+        <div class="formas-pagamento">
+          <h2>Formas de Pagamento</h2>
+        </div>
+        <div class="redes-sociais">
+          <h2>Redes Sociais</h2>
+        </div>
+      </section>
+      <p class="copyright">
+        Copyright &copy; 2024 Laricca - Todos os direitos reservados
+      </p>
+    </footer>
+
+    <a id="topo" href="#top">
+      <img src="../img/cabecalho/topo.png" alt="Voltar ao Topo" />
+    </a>
+  </body>
+</html>

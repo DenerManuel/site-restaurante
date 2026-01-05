@@ -1,0 +1,143 @@
+a.pagina-ativa > img {
+  background-color: yellow;
+}
+
+main {
+  h1 {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  table.carrinho {
+    width: 50%;
+    height: auto;
+    margin: 0 auto 15px auto;
+    border-collapse: collapse;
+
+    thead {
+      th {
+        padding: 10px;
+        text-align: start;
+        border-bottom: 1px solid black;
+
+        &#quantidade {
+          text-align: center;
+        }
+      }
+    }
+
+    tbody {
+      td {
+        padding: 10px 5px;
+
+        &.item {
+          div.item-container {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+
+            img {
+              width: 100px;
+              height: auto;
+              margin-right: 10px;
+              border-radius: 5px;
+            }
+          }
+        }
+
+        &.preco {
+          padding: 0 10px;
+        }
+
+        &.quantidade {
+          div.quantidade-container {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin-right: 10px;
+
+            input.quantidade-item {
+              border: 1px solid black;
+              border-radius: 5px;
+              width: 50px;
+              height: 30px;
+              margin: 0 5px;
+              text-align: center;
+
+              &::-webkit-inner-spin-button {
+                appearance: none;
+              } /* Código utilizado para retirar as setinhas do input number */
+            }
+            button {
+              &.adicionar-item,
+              &.diminuir-item {
+                border: 1px solid black;
+                border-radius: 5px;
+                width: 25px;
+                height: 25px;
+                background-color: lightgray;
+
+                &:hover {
+                  cursor: pointer;
+                  background-color: gray;
+                }
+              }
+              &.remover-item {
+                height: 40px;
+                padding: 5px;
+                margin-left: 20px;
+                border: 1px solid red;
+                border-radius: 5px;
+                background-color: red;
+                color: #FFF8DC;
+
+                &:hover {
+                  cursor: pointer;
+                  border: 1px solid red;
+                  background-color: #FFF8DC;
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    tfoot {
+      tr.total {
+        td {
+          padding: 5px 20px 5px 5px;
+          border-top: 1px solid black;
+          text-align: end;
+
+          span.strong {
+            font-weight: bold;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  button.finalizar-compra {
+    display: block;
+    width: 175px;
+    height: 50px;
+    color: white;
+    background-color: lightseagreen;
+    border: 1px solid lightseagreen;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto 20px auto;
+    padding: 5px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #FFF8DC;
+      color: lightseagreen;
+    }
+  }
+}

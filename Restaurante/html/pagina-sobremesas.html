@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cabecalho.css" />
+    <link rel="stylesheet" href="../css/pagina-cardapio.css" />
+    <link rel="stylesheet" href="../css/rodape.css" />
+    <title>Laricca - Página Inicial</title>
+  </head>
+  <body>
+    <a class="carrinho" href="carrinho.html">
+      <img
+        src="../img/cabecalho/header/carrinho.png"
+        alt="Carrinho"
+        id="carrinho"
+      />
+    </a>
+    <a class="cadastro" href="cadastro.html">Cadastro</a>
+
+    <header>
+      <div class="banner">
+      </div>
+      <nav class="menu-navegacao">
+        <ul>
+          <li>
+            <a href="pagina-inicial.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-home.png"
+                alt="Home"
+              />
+            </a>
+            Home
+          </li>
+          <li>
+            <a href="pagina-pratos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-pratos.png"
+                alt="Pratos"
+              />
+            </a>
+            Pratos
+          </li>
+          <li>
+            <a href="pagina-bebidas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-bebidas.png"
+                alt="Bebidas"
+              />
+            </a>
+            Bebidas
+          </li>
+          <li>
+            <a href="pagina-petiscos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-petiscos.png"
+                alt="Petiscos"
+              />
+            </a>
+            Petiscos
+          </li>
+          <li>
+            <a class="pagina-ativa" href="pagina-sobremesas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-sobremesas.png"
+                alt="Sobremesas"
+              />
+            </a>
+            Sobremesas
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1>Menu de Sobremesas</h1>
+
+      <section class="container-item">
+        <!-- Bolo de Cenoura -->
+        <div class="item">
+          <h2 class="sugestoes">Bolo de Cenoura</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-sobremesas/bolo-de-cenoura.jpg"
+              alt="Bolo de Cenoura"
+            />
+            <p class="preco-item">R$19,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('bolo_de_cenoura')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('bolo_de_cenoura')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('bolo_de_cenoura')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Fatia de Torta Doce -->
+        <div class="item">
+          <h2 class="sugestoes">Fatia de Torta Doce</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-sobremesas/fatia-de-torta-doce.jpg"
+              alt="Fatia de Torta Doce"
+            />
+            <p class="preco-item">R$19,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('fatia_de_torta_doce')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('fatia_de_torta_doce')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('fatia_de_torta_doce')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Bolinho de Chocolate -->
+        <div class="item">
+          <h2 class="sugestoes">Bolinho de Chocolate</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-sobremesas/bolinho-de-chocolate.jpg"
+              alt="Bolinho de Chocolate"
+            />
+            <p class="preco-item">R$19,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('bolinho_de_chocolate')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('bolinho_de_chocolate')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('bolinho_de_chocolate')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Sorvete com Calda de Chocolate -->
+        <div class="item">
+          <h2 class="sugestoes">Sorvete com Calda de Chocolate</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-sobremesas/sorvete-com-calda-de-chocolate.jpg"
+              alt="Sorvete com Calda de Chocolate"
+            />
+            <p class="preco-item">R$19,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('sorvete_com_calda_de_chocolate')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('sorvete_com_calda_de_chocolate')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('sorvete_com_calda_de_chocolate')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Pudim -->
+        <div class="item">
+          <h2 class="sugestoes">Pudim</h2>
+
+          <div class="informacoes-item">
+            <img src="../img/pagina-sobremesas/pudim.jpg" alt="Pudim" />
+            <p class="preco-item">R$19,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('pudim')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('pudim')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('pudim')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Ovo de Páscoa -->
+        <div class="item">
+          <h2 class="sugestoes">Ovo de Páscoa</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-sobremesas/ovo-de-pascoa.jpg"
+              alt="Ovo de Páscoa"
+            />
+            <p class="preco-item">R$19,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('ovo_de_pascoa')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('ovo_de_pascoa')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('ovo_de_pascoa')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Fatia de Bolo -->
+        <div class="item">
+          <h2 class="sugestoes">Fatia de Bolo</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-sobremesas/fatia-de-bolo.jpg"
+              alt="Fatia de Bolo"
+            />
+            <p class="preco-item">R$19,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('fatia_de_bolo')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('fatia_de_bolo')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('fatia_de_bolo')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Bolo de Queijo -->
+        <div class="item">
+          <h2 class="sugestoes">Bolo de Queijo</h2>
+
+          <div class="informacoes-item">
+            <img src="../img/pagina-sobremesas/bolo-de-queijo.jpg" alt="Bolo de Queijo" />
+            <p class="preco-item">R$19,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Bolo de Queijo')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Bolo de Queijo')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Bolo de Queijo')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Xícara de Sorvete -->
+        <div class="item">
+          <h2 class="sugestoes">Xícara de Sorvete</h2>
+
+          <div class="informacoes-item">
+            <img src="../img/pagina-sobremesas/xicara-de-sorvete.jpg" alt="Xícara de Sorvete" />
+            <p class="preco-item">R$19,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Xícara de Sorvete')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Xícara de Sorvete')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Xícara de Sorvete')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Cupcake de Chocolate -->
+        <div class="item">
+          <h2 class="sugestoes">Cupcake de Chocolate</h2>
+
+          <div class="informacoes-item">
+            <img src="../img/pagina-sobremesas/cupcake-de-chocolate.jpg" alt="Cupcake de Chocolate" />
+            <p class="preco-item">R$19,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Cupcake de Chocolate')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Cupcake de Chocolate')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Cupcake de Chocolate')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="informacoes">
+        <div class="contate-nos">
+          <h2>CONTATE-NOS</h2>
+          <p>Email:denere98@gmail.com Telefone: (44) 99763-2872</p>
+        </div>
+        <div class="endereco">
+          <h2>Endereço</h2>
+          <p>
+            Endereço: Goioerê - PR, Jardim Universitário, Nadir Cancian, N° 35.
+          </p>
+        </div>
+        <div class="formas-pagamento">
+          <h2>Formas de Pagamento</h2>
+        </div>
+        <div class="redes-sociais">
+          <h2>Redes Sociais</h2>
+        </div>
+      </section>
+      <p class="copyright">
+        Copyright &copy; 2024 Laricca - Todos os direitos reservados
+      </p>
+    </footer>
+
+    <a id="topo" href="#top">
+      <img src="../img/cabecalho/topo.png" alt="Voltar ao Topo" />
+    </a>
+  </body>
+</html>

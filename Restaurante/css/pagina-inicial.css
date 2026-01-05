@@ -1,0 +1,110 @@
+header > nav > ul > li > a.pagina-ativa > img {
+  background-color: yellow;
+}
+
+main {
+  h1 {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 50px;
+  }
+  section {
+    h2 {
+      width: 96%;
+      height: 50px;
+      margin: 0 auto 25px auto;
+      color: white;
+      background-color: black;
+      border: 5px solid gold;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div.sugestoes-container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      div.item {
+        width: 290px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+          width: 290px;
+          height: 190px;
+          border: 5px solid goldenrod;
+          border-radius: 20px;
+          margin-bottom: 20px;
+        }
+        p {
+          width: 270px;
+          height: 70px;
+          margin: 0 auto;
+          background-color: black;
+          color: white;
+          font-size: 19px;
+          font-weight: bold;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          border: 3px solid;
+          border-color: gray black black gray;
+        }
+        div.qtd-item {
+          margin: 15px 0;
+
+          button {
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid black;
+            background-color: lightgray;
+
+            &:hover {
+              cursor: pointer;
+              background-color: gray;
+            }
+          }
+
+          input {
+            text-align: center;
+            width: 50px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 0 5px;
+
+            &:focus {
+              background-color: gold;
+            }
+            &::-webkit-inner-spin-button {
+              appearance: none;
+            } /* Código utilizado para retirar as setinhas do input number */
+          }
+        }
+        button.adicionar-carrinho-button {
+          width: 100px;
+          height: 30px;
+          border-radius: 5px;
+          border: 1px solid lightseagreen;
+          background-color: lightseagreen;
+          color: white;
+          font-weight: bold;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #FFF8DC;
+            color: lightseagreen;
+          }
+        }
+      }
+    }
+  }
+}

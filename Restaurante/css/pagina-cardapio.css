@@ -1,0 +1,92 @@
+header > nav > ul > li > a.pagina-ativa > img {
+  background-color: yellow;
+}
+
+main {
+  h1 {
+    margin: 15px 0 0 0;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  section.container-item > div.item {
+    margin-bottom: 20px;
+
+    h2 {
+      width: 96%;
+      height: 50px;
+      margin: 0 auto 25px auto;
+      color: white;
+      background-color: black;
+      border: 5px solid gold;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div.informacoes-item {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px 20px;
+
+      img {
+        width: 451px;
+        height: 311px;
+        border: 8px solid goldenrod;
+        border-radius: 20px;
+      }
+
+      div.qtd-item {
+        button {
+          width: 25px;
+          height: 25px;
+          border: 1px solid black;
+          border-radius: 5px;
+          background-color: lightgray;
+
+          &:hover {
+            cursor: pointer;
+            background-color: gray;
+          }
+        }
+
+        input {
+          text-align: center;
+          width: 50px;
+          height: 30px;
+          border: 1px solid black;
+          border-radius: 5px;
+          margin: 0 5px;
+
+          &::-webkit-inner-spin-button {
+            appearance: none;
+          } /* Código utilizado para retirar as setinhas do input number */
+          &:focus {
+            background-color: lightgray;
+          }
+        }
+      }
+      button.adicionar-carrinho-button {
+        width: 100px;
+        height: 30px;
+        border: 2px solid lightseagreen;
+        background-color: lightseagreen;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #FFF8DC;
+          color: lightseagreen;
+        }
+      }
+      p.preco-item {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+}

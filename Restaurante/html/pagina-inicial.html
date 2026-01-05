@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cabecalho.css" />
+    <link rel="stylesheet" href="../css/pagina-inicial.css" />
+    <link rel="stylesheet" href="../css/rodape.css" />
+    <title>Laricca - Página Inicial</title>
+  </head>
+  <body>
+    <a class="carrinho" href="carrinho.html">
+      <img
+        src="../img/cabecalho/header/carrinho.png"
+        alt="Carrinho"
+        id="carrinho"
+      />
+    </a>
+    <a class="cadastro" href="cadastro.html">Cadastro</a>
+
+    <header>
+      <div class="banner"></div>
+      <nav class="menu-navegacao">
+        <ul>
+          <li>
+            <a class="pagina-ativa" href="pagina-inicial.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-home.png"
+                alt="Home"
+              />
+            </a>
+            Home
+          </li>
+          <li>
+            <a href="pagina-pratos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-pratos.png"
+                alt="Pratos"
+              />
+            </a>
+            Pratos
+          </li>
+          <li>
+            <a href="pagina-bebidas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-bebidas.png"
+                alt="Bebidas"
+              />
+            </a>
+            Bebidas
+          </li>
+          <li>
+            <a href="pagina-petiscos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-petiscos.png"
+                alt="Petiscos"
+              />
+            </a>
+            Petiscos
+          </li>
+          <li>
+            <a href="pagina-sobremesas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-sobremesas.png"
+                alt="Sobremesas"
+              />
+            </a>
+            Sobremesas
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1>Seja Bem-Vindo ao Laricca</h1>
+
+      <section class="sugestoes-pratos">
+        <h2 class="sugestoes">Sugestões de Pratos</h2>
+
+        <div class="sugestoes-container">
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-pratos/linguica.jpg"
+              alt="Linguiça Assada"
+            />
+            <p><span>Linguiça Assada</span><span>R$ 49,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Linguiça Assada')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Linguiça Assada')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Linguiça Assada')"
+            >
+              Carrinho
+            </button>
+          </div>
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-pratos/bolinho.jpg"
+              alt="Toletinho de Carne"
+            />
+            <p><span>Toletinho de carne</span><span>R$ 79,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Toletinho de carne')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Toletinho de carne')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Suco de Laranja')"
+            >
+              Carrinho
+            </button>
+          </div>
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-pratos/bolinho-de-arroz.jpg"
+              alt="Bolinho de Arroz"
+            />
+            <p><span>Bolinho de arroz</span><span>R$ 55,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Bolinho de arroz')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Bolinho de arroz')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Smoothie Vermelho')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="sugestoes-drinks">
+        <h2 class="sugestoes">Sugestões de Bebidas</h2>
+
+        <div class="sugestoes-container">
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-drinks/rainbow-mocktail.jpg"
+              alt="Rainbow Mocktail"
+            />
+            <p><span>Rainbow Mocktail</span><span>R$ 19,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Rainbow Mocktail')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Rainbow Mocktail')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Rainbow Mocktail')"
+            >
+              Carrinho
+            </button>
+          </div>
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-drinks/suco-de-laranja.jpg"
+              alt="Suco de Laranja"
+            />
+            <p><span>Suco de Laranja</span><span>R$ 5,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Suco de Laranja')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Suco de Laranja')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Suco de Laranja')"
+            >
+              Carrinho
+            </button>
+          </div>
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-drinks/smoothie-vermelho.jpg"
+              alt="Smoothie Vermelho"
+            />
+            <p><span>Smoothie de Melancia</span><span>R$ 59,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Smoothie Vermelho')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Smoothie Vermelho')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Smoothie Vermelho')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="sugestoes-petiscos">
+        <h2 class="sugestoes">Sugestões de Petiscos</h2>
+
+        <div class="sugestoes-container">
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-petiscos/bolinho-de-mandioca.webp"
+              alt="Bolinho de mandioca"
+            />
+            <p><span>Bolinho de mandioca</span><span>R$ 30,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Bolinho de mandioca')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Bolinho de mandioca')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Rainbow Mocktail')"
+            >
+              Carrinho
+            </button>
+          </div>
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-petiscos/batata-frita.jpeg"
+              alt="Batata Frita"
+            />
+            <p><span>Batata Frita</span><span>R$ 30,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Batata Frita')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Batata Frita')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Suco de Laranja')"
+            >
+              Carrinho
+            </button>
+          </div>
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-petiscos/frango-frito.webp"
+              alt="Frango Frito"
+            />
+            <p><span>Frango Frito</span><span>R$ 49,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Frango Frito')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Frango Frito')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Smoothie Vermelho')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="sugestoes-sobremesas">
+        <h2 class="sugestoes">Sugestões de Sobremesas</h2>
+
+        <div class="sugestoes-container">
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-sobremesas/xicara de sorvete.jpg"
+              alt="Xícara de Sorvete"
+            />
+            <p><span>Xícara de Sorvete</span><span>R$ 19,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Xícara de Sorvete')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Xícara de Sorvete')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Rainbow Mocktail')"
+            >
+              Carrinho
+            </button>
+          </div>
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-sobremesas/Bolinho de chocolate.jpg"
+              alt="Bolinho de Chocolate"
+            />
+            <p><span>Bolinho de Chocolate</span><span>R$ 19,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Bolinho de Chocolate')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Bolinho de Chocolate')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Suco de Laranja')"
+            >
+              Carrinho
+            </button>
+          </div>
+          <div class="item">
+            <img
+              src="../img/pagina-inicial/main/sugestoes-sobremesas/bolo fatiado.jpg"
+              alt="Bolo Fatiado"
+            />
+            <p><span>Bolo Fatiado</span><span>R$ 19,90</span></p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('Bolo Fatiado')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('Bolo Fatiado')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('Smoothie Vermelho')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="informacoes">
+        <div class="contate-nos">
+          <h2>CONTATE-NOS</h2>
+          <p>Email:denere98@gmail.com Telefone: (44) 99763-2872</p>
+        </div>
+        <div class="endereco">
+          <h2>Endereço</h2>
+          <p>
+            Endereço: Goioerê - PR, Jardim Universitário, Nadir Cancian, N° 35.
+          </p>
+        </div>
+        <div class="formas-pagamento">
+          <h2>Formas de Pagamento</h2>
+        </div>
+        <div class="redes-sociais">
+          <h2>Redes Sociais</h2>
+        </div>
+      </section>
+      <p class="copyright">
+        Copyright &copy; 2024 Laricca - Todos os direitos reservados
+      </p>
+    </footer>
+
+    <a id="topo" href="#top">
+      <img src="../img/cabecalho/topo.png" alt="Voltar ao Topo" />
+    </a>
+  </body>
+</html>

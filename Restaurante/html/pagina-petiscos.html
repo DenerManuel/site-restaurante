@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cabecalho.css" />
+    <link rel="stylesheet" href="../css/pagina-cardapio.css" />
+    <link rel="stylesheet" href="../css/rodape.css" />
+    <title>Laricca - Página Inicial</title>
+  </head>
+  <body>
+    <a class="carrinho" href="carrinho.html">
+      <img
+        src="../img/cabecalho/header/carrinho.png"
+        alt="Carrinho"
+        id="carrinho"
+      />
+    </a>
+    <a class="cadastro" href="cadastro.html">Cadastro</a>
+    
+    <header>
+      <div class="banner">
+      </div>
+      <nav class="menu-navegacao">
+        <ul>
+          <li>
+            <a href="pagina-inicial.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-home.png"
+                alt="Home"
+              />
+            </a>
+            Home
+          </li>
+          <li>
+            <a href="pagina-pratos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-pratos.png"
+                alt="Pratos"
+              />
+            </a>
+            Pratos
+          </li>
+          <li>
+            <a href="pagina-bebidas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-bebidas.png"
+                alt="Bebidas"
+              />
+            </a>
+            Bebidas
+          </li>
+          <li>
+            <a class="pagina-ativa" href="pagina-petiscos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-petiscos.png"
+                alt="Petiscos"
+              />
+            </a>
+            Petiscos
+          </li>
+          <li>
+            <a href="pagina-sobremesas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-sobremesas.png"
+                alt="Sobremesas"
+              />
+            </a>
+            Sobremesas
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1>Menu de Petiscos</h1>
+
+      <section class="container-item">
+        <!-- Frango Frito -->
+        <div class="item">
+          <h2 class="sugestoes">Frango Frito</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-petiscos/frango-frito.webp"
+              alt="Frango Frito"
+            />
+            <p class="preco-item">R$49,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('frango_frito')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('frango_frito')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('frango_frito')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Batata Doce  -->
+        <div class="item">
+          <h2 class="sugestoes">Batata Doce</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-petiscos/batata-doce.webp"
+              alt="Batata Doce"
+            />
+            <p class="preco-item">R$29,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('batata_doce')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('batata_doce')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('batata_doce')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Bolinho de Mandioca -->
+        <div class="item">
+          <h2 class="sugestoes">Bolinho de Mandioca</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-petiscos/bolinho-de-mandioca.webp"
+              alt="Bolinho de Mandioca"
+            />
+            <p class="preco-item">R$30,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('bolinho_de_mandioca')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('bolinho_de_mandioca')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('bolinho_de_mandioca')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Bolinho de Carne -->
+        <div class="item">
+          <h2 class="sugestoes">Bolinho de Carne</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-petiscos/bolinho-de-carne.webp"
+              alt="Bolinho de Carne"
+            />
+            <p class="preco-item">R$50,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('bolinho_de_carne')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('bolinho_de_carne')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('bolinho_de_carne')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Batata Frita -->
+        <div class="item">
+          <h2 class="sugestoes">Batata Frita</h2>
+
+          <div class="informacoes-item">
+            <img src="../img/pagina-petiscos/batata-frita.jpeg" alt="Batata Frita" />
+            <p class="preco-item">R$30,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('batata_frita')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('batata_frita')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('batata_frita')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Tulipa de Frango-Frito -->
+        <div class="item">
+          <h2 class="sugestoes">Tulipa de Frango-Frito</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-petiscos/tulipa-de-frango-frito.jpeg"
+              alt="Tulipa de Frango-Frito"
+            />
+            <p class="preco-item">R$69,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('tulipa_de_frango_frito')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('tulipa_de_frango_frito')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('tulipa_de_frango_frito')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Mandioca Frita -->
+        <div class="item">
+          <h2 class="sugestoes">Mandioca Frita</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-petiscos/mandioca-frita.webp"
+              alt="Mandioca Frita"
+            />
+            <p class="preco-item">R$22,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('mandioca_frita')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('mandioca_frita')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('mandioca_frita')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Isca de Peixe -->
+        <div class="item">
+          <h2 class="sugestoes">Isca de Peixe</h2>
+
+          <div class="informacoes-item">
+            <img src="../img/pagina-petiscos/iscas-de-peixe.jpeg" alt="Isca de Peixe" />
+            <p class="preco-item">R$45,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('isca_de_peixe')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('isca_de_peixe')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('isca_de_peixe')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <section class="informacoes">
+        <div class="contate-nos">
+          <h2>CONTATE-NOS</h2>
+          <p>Email:denere98@gmail.com Telefone: (44) 99763-2872</p>
+        </div>
+        <div class="endereco">
+          <h2>Endereço</h2>
+          <p>
+            Endereço: Goioerê - PR, Jardim Universitário, Nadir Cancian, N° 35.
+          </p>
+        </div>
+        <div class="formas-pagamento">
+          <h2>Formas de Pagamento</h2>
+        </div>
+        <div class="redes-sociais">
+          <h2>Redes Sociais</h2>
+        </div>
+      </section>
+      <p class="copyright">
+        Copyright &copy; 2024 Laricca - Todos os direitos reservados
+      </p>
+    </footer>
+
+    <a id="topo" href="#top">
+      <img src="../img/cabecalho/topo.png" alt="Voltar ao Topo" />
+    </a>
+  </body>
+</html>

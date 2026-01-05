@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cabecalho.css" />
+    <link rel="stylesheet" href="../css/pagina-cardapio.css" />
+    <link rel="stylesheet" href="../css/rodape.css">
+    <title>Laricca - Página Inicial</title>
+  </head>
+  <body>
+    <a class="carrinho" href="carrinho.html">
+      <img
+        src="../img/cabecalho/header/carrinho.png"
+        alt="Carrinho"
+        id="carrinho"
+      />
+    </a>
+    <a class="cadastro" href="cadastro.html">Cadastro</a>
+    
+    <header>
+      <div class="banner">
+      </div>
+      <nav class="menu-navegacao">
+        <ul>
+          <li>
+            <a href="pagina-inicial.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-home.png"
+                alt="Home"
+              />
+            </a>
+            Home
+          </li>
+          <li>
+            <a class="pagina-ativa" href="pagina-pratos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-pratos.png"
+                alt="Pratos"
+              />
+            </a>
+            Pratos
+          </li>
+          <li>
+            <a href="pagina-bebidas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-bebidas.png"
+                alt="Bebidas"
+              />
+            </a>
+            Bebidas
+          </li>
+          <li>
+            <a href="pagina-petiscos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-petiscos.png"
+                alt="Petiscos"
+              />
+            </a>
+            Petiscos
+          </li>
+          <li>
+            <a href="pagina-sobremesas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-sobremesas.png"
+                alt="Sobremesas"
+              />
+            </a>
+            Sobremesas
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1>Menu de Pratos</h1>
+      <section class="container-item">
+        <!-- LINGUIÇA ASSADA -->
+        <div class="item">
+          <h2 class="sugestoes">Linguiça Assada</h2>
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-pratos/linguica.jpg"
+              alt="Linguiça Assada"
+            />
+            <p class="preco-item">R$27,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('linguica_assada')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('linguica_assada')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('linguica_assada')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- TOLETINHO DE CARNE -->
+        <div class="item">
+          <h2 class="sugestoes">Toletinho de carne</h2>
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-pratos/toletinho-de-carne.jpg"
+              alt="Toletinho de carne"
+            />
+            <p class="preco-item">R$79,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('toletinho_de_carne')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('toletinho_de_carne')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('toletinho_de_carne')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- CARÁ TILÁPIA FRITA -->
+        <div class="item">
+          <h2 class="sugestoes">Cará Tilápia Frita</h2>
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-pratos/cara-tilapia-frita.jpg"
+              alt="Cará Tilápia frita"
+            />
+            <p class="preco-item">R$37,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('cara_tilapia_frita')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('cara_tilapia_frita')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('cara_tilapia_frita')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- BOLINHO DE ARROZ -->
+        <div class="item">
+          <h2 class="sugestoes">Bolinho de arroz</h2>
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-pratos/bolinho-de-arroz.jpg"
+              alt="Bolinho de arroz"
+            />
+            <p class="preco-item">R$55,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('bolinho_de_arroz')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('bolinho_de_arroz')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('bolinho_de_arroz')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- ISCA DE CARNE -->
+        <div class="item">
+          <h2 class="sugestoes">Isca de carne</h2>
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-pratos/isca-de-carne.jpg"
+              alt="Isca de carne"
+            />
+            <p class="preco-item">R$99,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('isca_de_carne')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('isca_de_carne')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('isca_de_carne')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- CAMARÃO COZIDO -->
+        <div class="item">
+          <h2 class="sugestoes">Camarão cozido</h2>
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-pratos/camarao-cozido.jpg"
+              alt="Camarão cozido"
+            />
+            <p class="preco-item">R$69,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('camarao_cozido')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('camarao_cozido')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('camarao_cozido')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- FILE MAL PASSADO -->
+        <div class="item">
+          <h2 class="sugestoes">Filé Mal Passado</h2>
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-pratos/file-mal-passado.jpg"
+              alt="Filé Mal Passado"
+            />
+            <p class="preco-item">R$99,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('file_mal_passado')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('file_mal_passado')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('file_mal_passado')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- BISTECA SUÍNA FRITA -->
+        <div class="item">
+          <h2 class="sugestoes">Bisteca Suína Frita</h2>
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-pratos/bisteca-frita.jpg"
+              alt="Bisteca Suína Frita"
+            />
+            <p class="preco-item">R$99,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('bisteca_suina_frita')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('bisteca_suina_frita')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('bisteca_suina_frita')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="informacoes">
+        <div class="contate-nos">
+          <h2>CONTATE-NOS</h2>
+          <p>Email:denere98@gmail.com Telefone: (44) 99763-2872</p>
+        </div>
+        <div class="endereco">
+          <h2>Endereço</h2>
+          <p>
+            Endereço: Goioerê - PR, Jardim Universitário, Nadir Cancian, N° 35.
+          </p>
+        </div>
+        <div class="formas-pagamento">
+          <h2>Formas de Pagamento</h2>
+        </div>
+        <div class="redes-sociais">
+          <h2>Redes Sociais</h2>
+        </div>
+      </section>
+      <p class="copyright">
+        Copyright &copy; 2024 Laricca - Todos os direitos reservados
+      </p>
+    </footer>
+
+    <a id="topo" href="#top">
+      <img src="../img/cabecalho/topo.png" alt="Voltar ao Topo" />
+    </a>
+  </body>
+</html>

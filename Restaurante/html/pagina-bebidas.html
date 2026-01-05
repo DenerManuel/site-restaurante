@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cabecalho.css" />
+    <link rel="stylesheet" href="../css/pagina-cardapio.css" />
+    <link rel="stylesheet" href="../css/rodape.css" />
+    <title>Laricca - Página Inicial</title>
+  </head>
+  <body>
+    <a class="carrinho" href="carrinho.html">
+      <img
+        src="../img/cabecalho/header/carrinho.png"
+        alt="Carrinho"
+        id="carrinho"
+      />
+    </a>
+    <a class="cadastro" href="cadastro.html">Cadastro</a>
+
+    <header>
+      <div class="banner"></div>
+      <nav class="menu-navegacao">
+        <ul>
+          <li>
+            <a href="pagina-inicial.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-home.png"
+                alt="Home"
+              />
+            </a>
+            Home
+          </li>
+          <li>
+            <a href="pagina-pratos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-pratos.png"
+                alt="Pratos"
+              />
+            </a>
+            Pratos
+          </li>
+          <li>
+            <a class="pagina-ativa" href="pagina-bebidas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-bebidas.png"
+                alt="Bebidas"
+              />
+            </a>
+            Bebidas
+          </li>
+          <li>
+            <a href="pagina-petiscos.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-petiscos.png"
+                alt="Petiscos"
+              />
+            </a>
+            Petiscos
+          </li>
+          <li>
+            <a href="pagina-sobremesas.html">
+              <img
+                src="../img/cabecalho/header/nav/botao-sobremesas.png"
+                alt="Sobremesas"
+              />
+            </a>
+            Sobremesas
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1>Menu de Bebidas</h1>
+
+      <section class="container-item">
+        <!-- Rainbow Mocktail -->
+        <div class="item">
+          <h2 class="sugestoes">Rainbow Mocktail</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-bebidas/rainbow-mocktail.jpg"
+              alt="Rainbow Mocktail"
+            />
+            <p class="preco-item">R$19,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('rainbow_mocktail')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('rainbow_mocktail')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('rainbow_mocktail')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Smoothie de Melancia  -->
+        <div class="item">
+          <h2 class="sugestoes">Smoothie de Melancia</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-bebidas/smoothie-melancia.jpg"
+              alt="Smoothie de Melancia"
+            />
+            <p class="preco-item">R$29,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('smoothie_de_melancia')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('smoothie_de_melancia')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('smoothie_de_melancia')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Summer Drink -->
+        <div class="item">
+          <h2 class="sugestoes">Summer Drink</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-bebidas/summer-drink.jpg"
+              alt="Summer Drink"
+            />
+            <p class="preco-item">R$27,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('summer_drink')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('summer_drink')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('summer_drink')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Suco de Laranja -->
+        <div class="item">
+          <h2 class="sugestoes">Suco de Laranja</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-bebidas/suco-de-laranja.jpg"
+              alt="Suco de Laranja"
+            />
+            <p class="preco-item">R$5,90</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('suco_de_laranja')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('suco_de_laranja')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('suco_de_laranja')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Água -->
+        <div class="item">
+          <h2 class="sugestoes">Água</h2>
+
+          <div class="informacoes-item">
+            <img src="../img/pagina-bebidas/agua.jpg" alt="Água" />
+            <p class="preco-item">R$2,50</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('agua')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('agua')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('agua')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Chocolate Quente -->
+        <div class="item">
+          <h2 class="sugestoes">Chocolate Quente</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-bebidas/chocolate-quente.jpg"
+              alt="Chocolate Quente"
+            />
+            <p class="preco-item">R$15,99</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('chocolate_quente')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('chocolate_quente')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('chocolate_quente')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Shake de Morango -->
+        <div class="item">
+          <h2 class="sugestoes">Shake de Morango</h2>
+
+          <div class="informacoes-item">
+            <img
+              src="../img/pagina-bebidas/shake-morango.jpg"
+              alt="Shake de Morango"
+            />
+            <p class="preco-item">R$12,70</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('shake_morango')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('shake_morango')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('shake_morango')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Cappuccino -->
+        <div class="item">
+          <h2 class="sugestoes">Cappuccino</h2>
+
+          <div class="informacoes-item">
+            <img src="../img/pagina-bebidas/cappuccino.jpg" alt="Cappuccino" />
+            <p class="preco-item">R$12,99</p>
+            <div class="qtd-item">
+              <button onclick="diminuirQtd('cappuccino')">-</button>
+              <input type="number" placeholder="0" />
+              <button onclick="aumentarQtd('cappuccino')">+</button>
+            </div>
+            <button
+              class="adicionar-carrinho-button"
+              onclick="carrinho('cappuccino')"
+            >
+              Carrinho
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="informacoes">
+        <div class="contate-nos">
+          <h2>CONTATE-NOS</h2>
+          <p>Email:denere98@gmail.com Telefone: (44) 99763-2872</p>
+        </div>
+        <div class="endereco">
+          <h2>Endereço</h2>
+          <p>
+            Endereço: Goioerê - PR, Jardim Universitário, Nadir Cancian, N° 35.
+          </p>
+        </div>
+        <div class="formas-pagamento">
+          <h2>Formas de Pagamento</h2>
+        </div>
+        <div class="redes-sociais">
+          <h2>Redes Sociais</h2>
+        </div>
+      </section>
+      <p class="copyright">
+        Copyright &copy; 2024 Laricca - Todos os direitos reservados
+      </p>
+    </footer>
+
+    <a id="topo" href="#top">
+      <img src="../img/cabecalho/topo.png" alt="Voltar ao Topo" />
+    </a>
+  </body>
+</html>
